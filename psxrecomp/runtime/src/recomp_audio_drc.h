@@ -149,8 +149,8 @@ void rab_config_defaults(rab_config *c) {
      * Keep 180 ms so the measured pause retains more than one callback of
      * reserve. Sustained slow emulation still drains it and remains visible
      * in telemetry. A 280 ms ring preserves 100 ms of overflow headroom. */
-    c->target_ms      = 90.0;
-    c->ring_ms        = 140.0;
+    c->target_ms      = 50.0;
+    c->ring_ms        = 70.0;
     c->kp             = 0.02;
     /* P-only intentionally: the former 0.02/s integral retained a +0.5%
      * correction after transition bursts and drained a steady 59.94 Hz
